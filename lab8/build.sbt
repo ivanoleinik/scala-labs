@@ -1,8 +1,8 @@
-name := "lab10"
+name := "lab8"
 
 version := "0.1"
 
-scalaVersion := "2.13.2"
+scalaVersion := "2.12.13"
 
 libraryDependencies += "org.typelevel" %% "cats-core" % "2.0.0"
 libraryDependencies += "org.scalatest" %% "scalatest" % "3.1.1" % "test"
