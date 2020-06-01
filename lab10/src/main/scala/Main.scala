@@ -26,7 +26,7 @@ object Main extends IOApp {
   }
 
   val gracefulShutdownProgram: Resource[IO, Unit] = for {
-    mvar <- Resource.make(MVar.empty[IO, String])(_ => IO(print("Release")))
+    mvar <- Resource.make(MVar.empty[IO, String])(_ => IO(print("release")))
     _ <- runCounter(mvar)
     _ <- runPrinter(mvar)
   } yield ()
